@@ -7,6 +7,7 @@ buildscript {
     ext.room_version = '2.0.0'
     ext.navigation_version = '1.0.0-rc02'
     ext.android_x_version = '1.0.2'
+    ext.multidex_version = '2.0.1'
 
     repositories {
         google()
