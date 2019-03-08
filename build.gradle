@@ -8,6 +8,7 @@ buildscript {
     ext.navigation_version = '1.0.0-rc02'
     ext.android_x_version = '1.0.2'
     ext.multidex_version = '2.0.1'
+    ext.dagger_version = '2.15'
 
     repositories {
         google()
