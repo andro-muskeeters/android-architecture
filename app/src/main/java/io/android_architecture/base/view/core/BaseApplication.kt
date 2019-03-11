@@ -1,8 +1,8 @@
-package com.turkcell.tbase.view.core
+package io.android_architecture.base.view.core
 
 import androidx.multidex.MultiDexApplication
 
-class TBaseApplication: MultiDexApplication() {
+class BaseApplication: MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()

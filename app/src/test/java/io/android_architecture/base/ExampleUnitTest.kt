@@ -1,4 +1,4 @@
-package com.turkcell.tbase
+package io.android_architecture.base
 
 import org.junit.Test
 
