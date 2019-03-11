@@ -1,4 +1,4 @@
-package io.android_architecture.base.view.core
+package io.android_architecture.base.core
 
 import androidx.multidex.MultiDexApplication
 
