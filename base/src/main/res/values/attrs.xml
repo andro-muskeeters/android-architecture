@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseTextView">
+        <attr name="baseTextStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="BaseImageView">
+        <attr name="baseImageStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="BaseEditText">
+        <attr name="baseEditTextStyle" format="reference"/>
+    </declare-styleable>
+</resources>
