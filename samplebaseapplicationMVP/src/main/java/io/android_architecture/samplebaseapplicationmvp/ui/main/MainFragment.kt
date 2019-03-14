@@ -7,7 +7,9 @@ import io.android_architecture.samplebaseapplicationmvp.R
 import io.android_architecture.samplebaseapplicationmvp.ui.BaseFragment
 import kotlinx.android.synthetic.main.fragment_main.*
 
-class MainFragment : BaseFragment() {
+class MainFragment : BaseFragment(), MainContract.View {
+
+    override val presenter by lazy { MainPresenter(this) }
 
     override fun getViewId() = R.layout.fragment_main
 
@@ -16,5 +18,13 @@ class MainFragment : BaseFragment() {
             progress_center.hide()
             text_sample_center.visibility = View.VISIBLE
         }, 3 * 1000)
+    }
+
+    override fun showLoading() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun hideLoading() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
