@@ -27,6 +27,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':base')
+
+    implementation "androidx.concurrent:concurrent-futures:1.0.0-alpha03"
 }
 
 repositories {
