@@ -40,6 +40,7 @@ dependencies {
         multidex_version = '2.0.1'
         dagger_version = '2.15'
         lifecycle_version = '2.0.0'
+        ext.rx_version = '2.3.0'
     }
     
     
@@ -71,6 +72,13 @@ dependencies {
     //Dagger
     api "com.google.dagger:dagger-android:2.16"
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    //SharedPreference
+    api "com.orhanobut:hawk:2.0.1"
+
+    //Rx
+    api "io.reactivex.rxjava2:rxkotlin:$rx_version"
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha02'
