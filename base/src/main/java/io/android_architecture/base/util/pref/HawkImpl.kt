@@ -1,5 +1,6 @@
 package io.android_architecture.base.util.pref
 
+import android.content.Context
 import com.orhanobut.hawk.Hawk
 import io.android_architecture.base.core.BaseApplication
 
@@ -7,11 +8,6 @@ import io.android_architecture.base.core.BaseApplication
  * Created by mehmetali on 3/18/19.
  */
 object HawkImpl : Pref {
-
-    init {
-        Hawk.init(BaseApplication.instance.applicationContext()).build()
-    }
-
     override fun <T> get(key: String): T? {
         return Hawk.get<T>(key)
     }
@@ -38,5 +34,9 @@ object HawkImpl : Pref {
 
     override fun getEntryCount() {
         Hawk.count()
+    }
+
+    override fun init() {
+        Hawk.init(BaseApplication.instance.applicationContext()).build()
     }
 }

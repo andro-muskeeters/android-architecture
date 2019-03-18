@@ -2,6 +2,7 @@ package io.android_architecture.base.core
 
 import android.content.Context
 import androidx.multidex.MultiDexApplication
+import io.android_architecture.base.util.pref.HawkImpl
 
 class BaseApplication : MultiDexApplication() {
 
@@ -21,6 +22,6 @@ class BaseApplication : MultiDexApplication() {
     override fun onCreate() {
         super.onCreate()
 
-
+        HawkImpl.init()
     }
 }
