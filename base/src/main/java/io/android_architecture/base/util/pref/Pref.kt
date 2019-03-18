@@ -1,7 +1,5 @@
 package io.android_architecture.base.util.pref
 
-import android.content.Context
-
 /**
  * Created by mehmetali on 3/18/19.
  */
@@ -21,5 +19,4 @@ interface Pref {
 
     fun getEntryCount()
 
-    fun init()
 }
