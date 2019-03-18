@@ -19,8 +19,9 @@ class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding =
-            DataBindingUtil.setContentView<ActivityTestBinding>(this, R.layout.activity_test)
-        binding.testModel= TestModel("https://www.nelerneler.com/content/images/medium/0038098_fikriye-emocan-3d-pelus-oyuncak.png")
+            DataBindingUtil.setContentView(this, R.layout.activity_test)
+        binding.testModel =
+            TestModel("https://www.nelerneler.com/content/images/medium/0038098_fikriye-emocan-3d-pelus-oyuncak.png")
 
     }
 
