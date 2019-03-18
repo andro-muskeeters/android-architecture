@@ -7,7 +7,7 @@ import io.android_architecture.base.core.BaseApplication
 /**
  * Created by mehmetali on 3/18/19.
  */
-object HawkImpl : Pref {
+object PrefHawkImpl : Pref {
     override fun <T> get(key: String): T? {
         return Hawk.get<T>(key)
     }
