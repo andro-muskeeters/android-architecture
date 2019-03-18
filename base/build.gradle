@@ -1,4 +1,4 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
@@ -13,6 +13,7 @@ android {
 
     defaultConfig {
         minSdkVersion 18
+        dataBinding { enabled = true }
         targetSdkVersion 28
         multiDexEnabled true
         versionCode 1
@@ -29,6 +30,19 @@ android {
 }
 
 dependencies {
+
+    ext {
+        retrofit_version = '2.5.0'
+        glide_version = '4.9.0'
+        room_version = '2.0.0'
+        navigation_version = '1.0.0-rc02'
+        android_x_version = '1.1.0-alpha02'
+        multidex_version = '2.0.1'
+        dagger_version = '2.15'
+        
+    }
+    
+    
     api fileTree(include: ['*.jar'], dir: 'libs')
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api "androidx.appcompat:appcompat:$android_x_version"
@@ -45,6 +59,9 @@ dependencies {
     api "com.github.bumptech.glide:glide:$glide_version"
 
     //Persistence
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
     kapt "androidx.room:room-compiler:$room_version"
     api "androidx.room:room-runtime:$room_version"
 
