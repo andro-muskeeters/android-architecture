@@ -1,6 +1,9 @@
-package io.android_architecture.base.util
+package io.android_architecture.base.util.extensions
 
+import android.content.Context
 import android.content.ContextWrapper
+import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
@@ -14,9 +17,17 @@ inline fun <Context, T> Context?.isRunning(block: (Context) -> (T)): T? {
         || (this is Fragment && isAdded && !isRemoving)
         || (this is ContextWrapper && baseContext is AppCompatActivity
                 && !(baseContext as AppCompatActivity).isDestroyed
-                && !(baseContext as AppCompatActivity).isFinishing)) {
+                && !(baseContext as AppCompatActivity).isFinishing)
+    ) {
         block(this)
     } else {
         null
     }
 }
+
+
+fun Context?.toast(text: CharSequence?, duration: Int = Toast.LENGTH_SHORT) =
+    this?.let { Toast.makeText(it, text, duration).show() }
+
+fun Context?.toast(@StringRes textId: Int, duration: Int = Toast.LENGTH_SHORT) =
+    this?.let { Toast.makeText(it, textId, duration).show() }

@@ -7,6 +7,7 @@ import android.util.Base64
 import android.widget.EditText
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import io.android_architecture.base.util.extensions.isRunning
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 
