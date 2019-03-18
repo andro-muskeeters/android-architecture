@@ -20,7 +20,7 @@ class TestActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding =
             DataBindingUtil.setContentView<ActivityTestBinding>(this, R.layout.activity_test)
-        binding.testModel= TestModel("http://asdbsado")
+        binding.testModel= TestModel("https://www.nelerneler.com/content/images/medium/0038098_fikriye-emocan-3d-pelus-oyuncak.png")
 
     }
 
