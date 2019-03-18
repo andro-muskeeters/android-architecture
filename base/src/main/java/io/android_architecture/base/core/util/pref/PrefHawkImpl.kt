@@ -1,8 +1,7 @@
-package io.android_architecture.base.util.pref
+package io.android_architecture.base.core.util.pref
 
-import android.content.Context
 import com.orhanobut.hawk.Hawk
-import io.android_architecture.base.core.BaseApplication
+import io.android_architecture.base.core.base.BaseApplication
 
 /**
  * Created by mehmetali on 3/18/19.

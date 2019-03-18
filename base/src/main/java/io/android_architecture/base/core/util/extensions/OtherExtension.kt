@@ -1,4 +1,4 @@
-package io.android_architecture.base.util
+package io.android_architecture.base.core.util.extensions
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -7,7 +7,7 @@ import android.util.Base64
 import android.widget.EditText
 import android.widget.ImageView
 import com.bumptech.glide.Glide
-import io.android_architecture.base.util.extensions.isRunning
+import io.android_architecture.base.core.util.extensions.isRunning
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 

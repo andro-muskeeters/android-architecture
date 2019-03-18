@@ -1,4 +1,4 @@
-package io.android_architecture.base.util
+package io.android_architecture.base.core.util.extensions
 
 
 /**

@@ -1,4 +1,4 @@
-package io.android_architecture.base.util.extensions
+package io.android_architecture.base.core.util.extensions
 
 import android.widget.Toast
 import androidx.annotation.StringRes

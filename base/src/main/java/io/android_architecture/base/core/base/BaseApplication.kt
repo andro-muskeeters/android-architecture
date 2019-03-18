@@ -1,9 +1,9 @@
-package io.android_architecture.base.core
+package io.android_architecture.base.core.base
 
 import android.content.Context
 import androidx.multidex.MultiDexApplication
-import io.android_architecture.base.util.pref.PrefHawkImpl
-import io.android_architecture.base.util.pref.Pref
+import io.android_architecture.base.core.util.pref.PrefHawkImpl
+import io.android_architecture.base.core.util.pref.Pref
 
 class BaseApplication : MultiDexApplication() {
 
