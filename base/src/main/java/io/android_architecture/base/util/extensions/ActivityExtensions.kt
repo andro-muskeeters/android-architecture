@@ -1,7 +1,8 @@
 package io.android_architecture.base.util.extensions
 
 import android.app.Activity
-import android.content.Context
+import android.os.Bundle
+import android.os.Parcelable
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
@@ -9,7 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-
+import io.android_architecture.base.core.base.BaseFragment
+import java.io.Serializable
 
 
 fun Activity.hideKeyboard() {
@@ -48,9 +50,18 @@ fun AppCompatActivity.addFragment(
             addToBackStack(tag)
         }
     }
-
 }
 
+fun AppCompatActivity.addFragment(
+    containerView: View,
+    fragment: androidx.fragment.app.Fragment,
+    tag: String? = fragment.javaClass.name,
+    addToBackStack: Boolean = false,
+    enterAnim: Int = 0,
+    exitAnim: Int = 0
+) {
+    addFragment(containerView.id, fragment, tag, addToBackStack, enterAnim, exitAnim)
+}
 
 fun AppCompatActivity.replaceFragment(
     containerViewId: Int,
