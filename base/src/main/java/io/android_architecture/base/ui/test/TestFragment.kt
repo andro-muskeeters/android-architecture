@@ -1,10 +1,9 @@
-package io.android_architecture.base.ui
+package io.android_architecture.base.ui.test
 
 import io.android_architecture.base.R
 import io.android_architecture.base.core.base.BaseBindingFragment
 import io.android_architecture.base.databinding.FragmentTestBinding
-import io.android_architecture.base.model.TestModel
-import io.android_architecture.base.ui.TestActivity.Companion.URL
+import io.android_architecture.base.ui.test.TestActivity.Companion.URL
 
 class TestFragment : BaseBindingFragment<FragmentTestBinding>() {
 

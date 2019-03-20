@@ -1,8 +1,6 @@
-package io.android_architecture.base.util.extensions
+package io.android_architecture.base.core.util.extensions
 
 import android.app.Activity
-import android.os.Bundle
-import android.os.Parcelable
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
@@ -10,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import io.android_architecture.base.core.base.BaseFragment
-import java.io.Serializable
 
 
 fun Activity.hideKeyboard() {

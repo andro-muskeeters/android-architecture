@@ -6,7 +6,7 @@
 
 		<variable
 				name="testModel"
-				type="io.android_architecture.base.model.TestModel"/>
+				type="io.android_architecture.base.ui.test.TestModel"/>
 	</data>
 
 	<androidx.constraintlayout.widget.ConstraintLayout

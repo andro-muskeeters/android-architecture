@@ -1,4 +1,4 @@
-package io.android_architecture.base.view
+package io.android_architecture.base.core.base.view
 
 import android.content.Context
 import android.util.AttributeSet

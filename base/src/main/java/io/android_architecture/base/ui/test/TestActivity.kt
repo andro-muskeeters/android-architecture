@@ -1,9 +1,9 @@
-package io.android_architecture.base.ui
+package io.android_architecture.base.ui.test
 
 import androidx.core.os.bundleOf
 import io.android_architecture.base.R
 import io.android_architecture.base.core.base.BaseActivity
-import io.android_architecture.base.util.extensions.addFragment
+import io.android_architecture.base.core.util.extensions.addFragment
 import kotlinx.android.synthetic.main.activity_test.*
 
 /**
