@@ -21,7 +21,7 @@ abstract class BaseActivity : AppCompatActivity() {
      *
      * Called after setContentView().
      */
-    abstract fun populateUI()
+    abstract fun populateUI(savedInstanceState: Bundle?)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +32,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
         if (this !is BaseBindingActivity<*>) {
             setContentView(layoutRes())
-            populateUI()
+            populateUI(savedInstanceState)
         }
     }
 }

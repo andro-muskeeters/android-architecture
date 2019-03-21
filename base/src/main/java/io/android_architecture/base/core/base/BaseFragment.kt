@@ -24,7 +24,7 @@ abstract class BaseFragment : Fragment() {
      *
      * Called after onViewCreated()
      */
-    abstract fun populateUI()
+    abstract fun populateUI(savedInstanceState: Bundle?)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         TAG = this::class.java.simpleName
@@ -36,6 +36,6 @@ abstract class BaseFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        populateUI()
+        populateUI(savedInstanceState)
     }
 }

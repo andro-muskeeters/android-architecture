@@ -12,6 +12,6 @@ abstract class BaseBindingActivity<T : ViewDataBinding> : BaseActivity() {
         super.onCreate(savedInstanceState)
         activityBinding = DataBindingUtil.bind(window.decorView.rootView)
 
-        populateUI()
+        populateUI(savedInstanceState)
     }
 }

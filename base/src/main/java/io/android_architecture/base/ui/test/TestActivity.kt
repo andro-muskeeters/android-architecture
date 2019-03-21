@@ -1,5 +1,6 @@
 package io.android_architecture.base.ui.test
 
+import android.os.Bundle
 import androidx.core.os.bundleOf
 import io.android_architecture.base.R
 import io.android_architecture.base.core.base.BaseActivity
@@ -19,7 +20,7 @@ class TestActivity : BaseActivity() {
 
     override fun layoutRes() = R.layout.activity_test
 
-    override fun populateUI() {
+    override fun populateUI(savedInstanceState: Bundle?) {
         addFragment(layout_container, TestFragment().apply {
             arguments = bundleOf(Pair(URL, url))
         })
