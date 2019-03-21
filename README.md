@@ -1,6 +1,4 @@
-This repository contains base implementations with different architectures on Android and basic samples.
+This branch contains base implementations including databinding, SharedPreference Helper and base Activity/Fragment with useful extensions.
 
-## Architectures
-This repository contains this architecture:
-1. MVP
-2. MVVM
+## Usage
+Just fork this repository and refactor package name.
