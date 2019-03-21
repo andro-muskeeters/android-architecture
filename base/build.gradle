@@ -35,7 +35,7 @@ dependencies {
         retrofit_version = '2.5.0'
         glide_version = '4.9.0'
         room_version = '2.0.0'
-        navigation_version = '1.0.0-rc02'
+        navigation_version = '2.0.0'
         android_x_version = '1.1.0-alpha02'
         multidex_version = '2.0.1'
         dagger_version = '2.15'
@@ -66,8 +66,8 @@ dependencies {
     api "androidx.room:room-runtime:$room_version"
 
     //Navigation
-    api "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
-    api "android.arch.navigation:navigation-ui-ktx:$navigation_version"
+    api "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    api "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
     //Dagger
     api "com.google.dagger:dagger-android:2.16"
