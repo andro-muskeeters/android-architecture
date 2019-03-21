@@ -10,7 +10,7 @@ abstract class BaseBindingActivity<T : ViewDataBinding> : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityBinding = DataBindingUtil.bind(window.decorView.rootView)
+        activityBinding = DataBindingUtil.setContentView(this, layoutRes())
 
         populateUI(savedInstanceState)
     }
