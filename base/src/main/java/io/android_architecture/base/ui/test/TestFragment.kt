@@ -8,7 +8,7 @@ import io.android_architecture.base.ui.test.TestActivity.Companion.URL
 
 class TestFragment : BaseBindingFragment<FragmentTestBinding>() {
 
-    override fun layoutRes() = R.layout.fragment_test
+    override fun getLayoutRes() = R.layout.fragment_test
 
     override fun populateUI(savedInstanceState: Bundle?) {
         arguments?.getString(URL)?.let { url ->

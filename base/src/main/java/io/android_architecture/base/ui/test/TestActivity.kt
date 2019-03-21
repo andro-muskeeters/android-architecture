@@ -18,7 +18,7 @@ class TestActivity : BaseActivity() {
         const val url = "https://www.nelerneler.com/content/images/medium/0038098_fikriye-emocan-3d-pelus-oyuncak.png"
     }
 
-    override fun layoutRes() = R.layout.activity_test
+    override fun getLayoutRes() = R.layout.activity_test
 
     override fun populateUI(savedInstanceState: Bundle?) {
         addFragment(layout_container, TestFragment().apply {

@@ -18,7 +18,7 @@ abstract class BaseFragment : Fragment() {
      * Provide layout resource id of an Fragment
      */
     @LayoutRes
-    abstract fun layoutRes(): Int
+    abstract fun getLayoutRes(): Int
 
     /**
      *
@@ -31,7 +31,7 @@ abstract class BaseFragment : Fragment() {
 
         //You can implement your initial common setup about this Fragment instance here.
 
-        return inflater.inflate(layoutRes(), container, false)
+        return inflater.inflate(getLayoutRes(), container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

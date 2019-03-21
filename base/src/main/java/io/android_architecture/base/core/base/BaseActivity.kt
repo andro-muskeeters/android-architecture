@@ -15,7 +15,7 @@ abstract class BaseActivity : AppCompatActivity() {
      * Provide layout resource id of an Fragment
      */
     @LayoutRes
-    abstract fun layoutRes(): Int
+    abstract fun getLayoutRes(): Int
 
     /**
      *
@@ -31,7 +31,7 @@ abstract class BaseActivity : AppCompatActivity() {
         //You can implement your initial common setup about this Fragment instance here.
 
         if (this !is BaseBindingActivity<*>) {
-            setContentView(layoutRes())
+            setContentView(getLayoutRes())
             populateUI(savedInstanceState)
         }
     }
