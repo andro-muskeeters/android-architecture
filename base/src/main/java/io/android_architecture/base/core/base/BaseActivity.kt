@@ -10,6 +10,10 @@ abstract class BaseActivity : AppCompatActivity() {
         var TAG = ""
     }
 
+    init {
+        TAG = this::class.java.simpleName
+    }
+
     /**
      *
      * Provide layout resource id of an Fragment
@@ -25,8 +29,6 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        TAG = this::class.java.simpleName
 
         //You can implement your initial common setup about this Fragment instance here.
 

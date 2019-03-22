@@ -13,6 +13,10 @@ abstract class BaseFragment : Fragment() {
         var TAG = ""
     }
 
+    init {
+        TAG = this::class.java.simpleName
+    }
+
     /**
      *
      * Provide layout resource id of an Fragment
@@ -27,8 +31,6 @@ abstract class BaseFragment : Fragment() {
     abstract fun populateUI(savedInstanceState: Bundle?)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        TAG = this::class.java.simpleName
-
         //You can implement your initial common setup about this Fragment instance here.
 
         return inflater.inflate(getLayoutRes(), container, false)
