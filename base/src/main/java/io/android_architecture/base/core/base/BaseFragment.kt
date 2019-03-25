@@ -9,13 +9,7 @@ import androidx.fragment.app.Fragment
 
 abstract class BaseFragment : Fragment() {
 
-    companion object {
-        var TAG = ""
-    }
-
-    init {
-        TAG = this::class.java.simpleName
-    }
+    protected val TAG = this::class.java.simpleName
 
     /**
      *

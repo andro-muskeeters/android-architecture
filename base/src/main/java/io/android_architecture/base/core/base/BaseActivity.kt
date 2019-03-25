@@ -6,13 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 abstract class BaseActivity : AppCompatActivity() {
 
-    companion object {
-        var TAG = ""
-    }
-
-    init {
-        TAG = this::class.java.simpleName
-    }
+    protected val TAG = this::class.java.simpleName
 
     /**
      *
