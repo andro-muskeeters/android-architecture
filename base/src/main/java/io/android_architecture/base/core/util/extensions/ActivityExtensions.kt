@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
 
-
 fun Activity.hideKeyboard() {
     var view = this.currentFocus
     if (view == null) {
@@ -47,9 +46,18 @@ fun AppCompatActivity.addFragment(
             addToBackStack(tag)
         }
     }
-
 }
 
+fun AppCompatActivity.addFragment(
+    containerView: View,
+    fragment: androidx.fragment.app.Fragment,
+    tag: String? = fragment.javaClass.name,
+    addToBackStack: Boolean = false,
+    enterAnim: Int = 0,
+    exitAnim: Int = 0
+) {
+    addFragment(containerView.id, fragment, tag, addToBackStack, enterAnim, exitAnim)
+}
 
 fun AppCompatActivity.replaceFragment(
     containerViewId: Int,
