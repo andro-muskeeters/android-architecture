@@ -36,17 +36,16 @@ dependencies {
         glide_version = '4.9.0'
         room_version = '2.0.0'
         navigation_version = '2.0.0'
-        android_x_version = '1.1.0-alpha03'
+        compat_version = '1.0.2'
         multidex_version = '2.0.1'
         dagger_version = '2.15'
         lifecycle_version = '2.0.0'
         ext.rx_version = '2.3.0'
     }
     
-    
     api fileTree(include: ['*.jar'], dir: 'libs')
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    api "androidx.appcompat:appcompat:$android_x_version"
+    api "androidx.appcompat:appcompat:$compat_version"
     api 'androidx.cardview:cardview:1.0.0'
     api 'androidx.core:core-ktx:1.1.0-alpha05'
     api 'androidx.constraintlayout:constraintlayout:1.1.3'
