@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
-apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion 28
@@ -30,12 +30,10 @@ android {
 }
 
 dependencies {
-
     ext {
         retrofit_version = '2.5.0'
         glide_version = '4.9.0'
         room_version = '2.0.0'
-        navigation_version = '2.0.0'
         compat_version = '1.0.2'
         multidex_version = '2.0.1'
         dagger_version = '2.15'
