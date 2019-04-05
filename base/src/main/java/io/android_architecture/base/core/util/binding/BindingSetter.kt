@@ -3,7 +3,7 @@ package io.android_architecture.base.core.util.binding
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
-import com.bumptech.glide.Glide
+import io.android_architecture.base.core.util.module.GlideApp
 
 
 /**
@@ -16,7 +16,7 @@ object BindingSetter {
     @BindingAdapter(value = ["imageUrl", "placeholder", "error"], requireAll = false)
     fun ImageView.setImageUrl(url: String?, placeholder: Drawable?, error: Drawable?) {
         url?.let {
-            Glide.with(context).load(url).placeholder(placeholder).error(error).into(this)
+            GlideApp.with(context).load(url).placeholder(placeholder).error(error).into(this)
         }
     }
 }
